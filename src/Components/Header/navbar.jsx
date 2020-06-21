@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import LogoUnal from '../../Images/Logo-unal.jpeg'
 
 
 class Nabvar extends Component {
@@ -9,39 +10,46 @@ class Nabvar extends Component {
     render() { 
         return (
             <>
-                <div className="containerHeader">
+                <div className="containerHeader position-relative">
                     <div className="containerHeader-Logo">
 
                         {/* Logo del header */}
-                        <div class="container">
-                            <img src="https://unal.edu.co/typo3conf/ext/unal_skin_default/Resources/Public/images/escudoUnal_black.png" class="figure-img img-fluid rounded" />
+                        <div className="container">
+                            <img src={LogoUnal} className="LogoImage" alt="Logo Unal"/>
                         </div>
 
                         {/* barra de navegación */}
-                        <div class="container containerNav">                       
-                            <nav class="navbar navbar-expand-lg navbar-white bg-white rounded-pill">
+                        <div className="container containerNav  bg-white">                       
+                            <nav className="navbar navbar-expand-lg navbar-white">
                             
-                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                    <span class="navbar-toggler-icon"></span>
+                                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span className="navbar-toggler-icon"></span>
                                 </button>
 
-                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                    <ul class="navbar-nav mr-auto">
-                                    <li class="nav-item active">
-                                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Link</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                                    </li>
+                                <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul className="navbar-nav mr-auto">
+                                        <li className="nav-item">
+                                            <a className="nav-link" href="#">INICIO<span className="sr-only">(current)</span></a>
+                                        </li>
+                                        <li className="nav-item">
+                                            <a className="nav-link" href="#">CONTENIDOS EDUCATIVOS</a>
+                                        </li>
+                                        <li className="nav-item">
+                                            <a className="nav-link" href="#">ESCUELA VIRTUAL</a>
+                                        </li>
+                                        <li className="nav-item">
+                                            <a className="nav-link" href="#">VIDEOS</a>
+                                        </li>
                                     </ul>
 
                                     {/* buscador */}
-                                    <form class="form-inline my-2 my-lg-0 rounded-pill">
-                                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-                                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                                    <form className="form-inline my-2 my-lg-0 rounded-pill">
+                                        <div classNameName="Input-group">
+                                            <input className="form-control mr-sm-2 rounded-pill" type="search" placeholder="Buscar en ANSV" aria-label="Search" />
+                                                <button className="btn btn-outline-primary rounded" type="submit">
+                                                    <i className="fa fa-search"></i>
+                                                </button>
+                                        </div>
                                     </form>
 
                                 </div>
@@ -50,11 +58,11 @@ class Nabvar extends Component {
                     </div>
 
 
-                    <div class="containerBreadcrumb">
+                    <div className="containerBreadcrumb">
                         <nav aria-label="breadcrumb mb-0">
-                            <ol class="breadcrumb bg-transparent container mb-0">
-                                <li class="breadcrumb-item"><a href="#">Inicio</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Contenido</li>
+                            <ol className="breadcrumb bg-transparent container mb-0">
+                                <li className="breadcrumb-item active"><a href="#">Inicio</a></li>
+                                <li className="breadcrumb-item active" aria-current="page"><a href="#">Contenidos educativos</a></li>
                             </ol>
                         </nav>
                     </div>

@@ -1,25 +1,50 @@
 .containerHeader{
-    position: relative;
 
     .containerHeader-Logo{
         background-color: $headerBackgroundColor;
-        min-height: 25vh;
+        @include media-breakpoint-up(md) {
+            padding-bottom: 3em;
+          }
+          padding-bottom: 2em;
+        .LogoImage{
+            @include media-breakpoint-up(md) {
+                max-width:25%;
+              }
+            max-width: 100%;
+            height: auto;
+            cursor: pointer;
+        }
     }
 
      .containerNav{
         @include media-breakpoint-up(md) {
             top: 50%;
-            left:7.5vw;
+            left:0;
+            right:0;
+            margin: 0 auto;
+            border-radius: 50rem
           }
 
-          top: 57%;
+          top: 55%;
          position: absolute;
-         
+        
+        .nav-item{
+            margin: 0 1em;
+            a{
+             color:$kingBlue ;
+            }
+        &:active, &:hover{
+            background-color:$kingBlue;
+            a{
+                color: white;
+            }
+        }
+        }
      }
 
     .containerBreadcrumb{
         background-color: $kingBlue;
-        padding-top: 3.3%;
+        padding-top: 3em;
 
     }
 }
