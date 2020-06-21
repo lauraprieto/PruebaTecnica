@@ -11,7 +11,7 @@ class Content extends Component {
                 <div className="container shadow-lg p-5 mb-5 bg-white rounded">
                     <div className="filter mb-5">
                         <form>
-                            <div class="form-row align-items-center ">
+                            <div class="form-row align-items-center">
                                 <div class="col-auto my-1 ">
                                     <select class="custom-select mr-sm-2 shadow bg-white" id="inlineFormCustomSelect">
                                         <option selected>Ordenar por</option>
