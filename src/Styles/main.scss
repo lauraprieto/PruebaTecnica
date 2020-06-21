@@ -1,0 +1,27 @@
+/*** Archivo padre de los estilos ****/
+// Este archivo contiene estilos generale y las importaciones de los archivos de estilos para cada componente
+
+
+
+/***** Variables ****/
+
+$headerBackgroundColor: gray; // Color para el fondo del header
+$kingBlue:#071E4A; // Color para menu de ubicacion de la pagina y contenedor de acciones de usabilidad
+$bodyBackgroundColor: #01B5E2; // Color de fondo para el body
+// 
+
+
+
+
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+// Imports styles components
+@import "~bootstrap/scss/bootstrap";
+@import "./header";
+@import "./body";
