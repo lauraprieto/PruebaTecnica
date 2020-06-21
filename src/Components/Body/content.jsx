@@ -9,6 +9,7 @@ class Content extends Component {
         return (
             <>
                 <div className="container shadow-lg p-5 mb-5 bg-white rounded">
+                    {/* Contenedor de filtro */}
                     <div className="filter mb-5">
                         <form>
                             <div className="form-row align-items-center">
@@ -21,6 +22,7 @@ class Content extends Component {
                                     </select>
                                 </div>
 
+
                                 <div className="col-auto my-1">
                                     <button type="submit" className="btn btn-secondary text-dark shadow bg-white rounded">Filtrar</button>
                                 </div>
@@ -29,7 +31,8 @@ class Content extends Component {
                     </div>
 
                     <hr/>
-
+                    
+                   {/* contenido el cual debe irse iterando */}
                     <div className="containerInformation mt-5">
                         <div className="card-columns">
                             <div className="card shadow bg-white rounded">
