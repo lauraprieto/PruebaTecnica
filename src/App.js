@@ -6,9 +6,8 @@ import Content from './Components/Body/content'
 function App() {
   return (
     <div className="App">
-      <Nabvar>
+      <Nabvar />
         <Content />
-      </Nabvar>
     </div>
   );
 }

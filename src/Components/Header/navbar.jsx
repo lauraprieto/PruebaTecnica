@@ -51,8 +51,8 @@ class Nabvar extends Component {
 
 
                     <div class="containerBreadcrumb">
-                        <nav aria-label="breadcrumb">
-                            <ol class="breadcrumb bg-transparent container">
+                        <nav aria-label="breadcrumb mb-0">
+                            <ol class="breadcrumb bg-transparent container mb-0">
                                 <li class="breadcrumb-item"><a href="#">Inicio</a></li>
                                 <li class="breadcrumb-item active" aria-current="page">Contenido</li>
                             </ol>
